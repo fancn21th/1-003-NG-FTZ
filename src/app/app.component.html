@@ -1,15 +1,19 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav></mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button mat-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      fantainze.com 欢迎您的拜访
-    </mat-toolbar>
-    <img
-      src="https://storage.cloud.google.com/fantianze.com/disneyland-tour-001.jpg?authuser=2&walkthrough_tutorial_id=storage_quickstart"
-      alt=""
-    />
-  </mat-sidenav-content>
+  <mat-sidenav
+    #sidenav
+    mode="push"
+    mode="side"
+    [opened]="true"
+    [fixedInViewport]="true"
+  ></mat-sidenav>
+  <mat-toolbar color="primary">
+    <button mat-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    fantainze.com 欢迎您的拜访
+  </mat-toolbar>
+  <img
+    src="https://storage.cloud.google.com/fantianze.com/disneyland-tour-001.jpg?authuser=2&walkthrough_tutorial_id=storage_quickstart"
+    alt=""
+  />
 </mat-sidenav-container>
