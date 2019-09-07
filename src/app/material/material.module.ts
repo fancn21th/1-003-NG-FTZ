@@ -5,7 +5,7 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule } from "@angular/material/icon";
-
+import { LayoutModule } from "@angular/cdk/layout";
 @NgModule({
   declarations: [],
   imports: [],
@@ -15,7 +15,8 @@ import { MatIconModule } from "@angular/material/icon";
     MatCheckboxModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    LayoutModule
   ]
 })
 export class MaterialModule {}

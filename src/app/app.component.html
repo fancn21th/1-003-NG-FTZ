@@ -1,9 +1,8 @@
 <mat-sidenav-container>
   <mat-sidenav
     #sidenav
-    mode="push"
-    mode="side"
-    [opened]="true"
+    [mode]="sidenavMode"
+    [opened]="!isSmallScreen"
     [fixedInViewport]="true"
   ></mat-sidenav>
   <mat-toolbar color="primary">
