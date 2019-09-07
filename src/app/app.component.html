@@ -16,3 +16,12 @@
     alt=""
   />
 </mat-sidenav-container>
+<button
+  *ngIf="isSmallScreen"
+  mat-mini-fab
+  color="primary"
+  class="sidenav-toggle"
+  (click)="sidenav.toggle()"
+>
+  <mat-icon>view_list</mat-icon>
+</button>
